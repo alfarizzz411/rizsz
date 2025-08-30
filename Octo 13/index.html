@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Teruntuk Annur Safiyya💞</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- CONFETTI -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+      background-image: url('pink.jpg');
+      background-size: cover;
+      background-repeat: repeat-y;
+      animation: bgMove 30s linear infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 -1000px; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff3399;
+      animation: fadeIn 2s ease-in-out;
+      letter-spacing: 2px;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 18px;
+      background-color: #ff3399;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      margin: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e60073;
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 99;
+      transition: opacity 0.3s ease;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      z-index: 9999;
+      max-width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      color: #ff3399;
+      animation: fadeIn 0.5s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .gambar-interaktif,
+    .gambar-interaktif2 {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      transition: transform 0.3s ease;
+    }
+
+    .gambar-interaktif {
+      top: 20px;
+      left: 20px;
+    }
+
+    .gambar-interaktif2 {
+      top: 20px;
+      right: 20px;
+    }
+
+    .gambar-interaktif:hover,
+    .gambar-interaktif:active,
+    .gambar-interaktif2:hover,
+    .gambar-interaktif2:active {
+      transform: scale(1.1) rotate(10deg);
+    }
+
+  </style>
+</head>
+
+<body>
+  <img src="image/images.jpeg" class="gambar-interaktif">
+  <img src="image/kurikat.jpeg" class="gambar-interaktif2">
+  <img src="image/flower.png" class="bunga" alt="bunga" id="gambar3">
+
+  <h1>Hai, ada pesan buat kamu 🎉</h1>
+  <button onclick="showPopup()">Klik di sini!</button>
+
+  <!-- POPUP -->
+  <div id="overlay" onclick="closePopup()"></div>
+
+  <div id="popup">
+    <h2>HAII HAPPY BIRTHDAY‼️‼️</h2>
+    <p>
+      <br><br>
+      aku nggaa tau kamu bakal suka ini ato nggaaa hehee, tapi yang terpenting hari ini hari yang spesial buat kamu
+      aku cuma mau bilang semoga dengan bertambahnya usia mu kamu bisa menjadi pribadi yang lebih baikkk, dan
+      setiap harapan yang kamu harapkan menjadi kenyataan. Aku berharap semoga kamu dikelilingi sama orang orang yang baik,
+      peduli sama kamu, nerima kamu apa adanya, dan juga selalu mensupport kamu. oiyaa akuuu juga mau bilang kalo aku beruntung bangett
+      karna punya seseorang kaya kamu, kamu itu berharga buat aku. aku harap kita bisa terus mempertahankan hubungan ini,
+      maaf juga kalo aku pernah bikin kamu nangis atau bikin kamu sedih. Aku tau akhir akhir ini kamu lagi sibuk,
+      jadiiii semangatt yaa, aku tau pasti itu cape bangettt, tapii kamu harus tetep semangatt karna menyerah bukanlah pilihan,
+      aku juga mau bilang kamu jangan terlalu sering insecure, kamu itu cantikkk tauuu, lucuu, imuppp, baikk, ngga galak (kayanya), penyabar (😁), tapi serius
+      kamu itu haruss percaya sama diri kamu sendirii, jangan kebanyakan insecuree yaaa nanti cantikknya ilangg.
+      last aku cuma mau bilang semoga di tahun ini kamu lebih banyak mendapatkan kebahagiaan yang pantas buat kamu dapatkan,
+      kamu layak untuk mendapatkan kebahagiaan. Sekali lagi aku ucapkann SELAMAT ULANG TAHUN!!!.
+    </p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    function showPopup() {
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("popup").style.display = "block";
+      confetti();
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    // Confetti on click gambar3
+    const gambar3 = document.getElementById("gambar3");
+    gambar3.addEventListener("click", () => {
+      confetti({
+        particleCount: 150,
+        spread: 90,
+        origin: { y: 0.6 },
+        colors: ['#ff4081', '#ff3399', '#ffeb3b']
+      });
+    });
+  </script>
+</body>
+</html>

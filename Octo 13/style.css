@@ -1,0 +1,39 @@
+. * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: arial, sans-serif;
+    font-size: 1.2em;
+    color: #ff3399;
+   
+}
+
+.bunga {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(0 0 10px rgba(255, 192, 203, 0.4));
+  animation: goyangBunga 1.5s ease-in-out infinite;
+  transform-origin: center center; /* Ensure the center is the anchor point for the transform */
+}
+
+@keyframes goyangBunga {
+  0%   { transform: translate(-50%, 50%) translateY(0); }
+  50%  { transform: translate(-50%, 50%) translateY(-15px); }
+  100% { transform: translate(-50%, 50%) translateY(0); }
+}
+
+body {
+    background-image: url('image/pink.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
