@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rifqi Alfariz | Web Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+</head>
+<body>
+
+  <!--Navbar-->
+  <header>
+    <nav>
+      <h1 class="logo"><a href="#" id="logo-link">RA</a></h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Avatar-->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h2><span id="typed-name"></span></h2>
+      <p><span id="typed-job"></span></p>
+      <a href="#projects" class="btn">Project</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="logo">
+    </div>
+  </section>
+
+  <!--About-->
+  <section class="about" id="about">
+    <div class="container" data-aos="fade-right">
+      <h2>About <span class="purplwhite-text">Me</span></h2>
+      <p>Hi! I'm an IT enthusiast who loves learning about web development and software design. 
+      I enjoy solving problems through code and creating digital experiences that are simple and effective. 
+      I’m always eager to improve my skills and take on new challenges in the tech world.</p>
+    </div>
+  </section>
+
+  <!--Services-->
+  <section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Services</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Here's what I can help you with
+    </p>
+
+    <div class="card-grid">
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>I build responsive, fast, and user-friendly websites tailored to your needs.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>UI/UX Design</h3>
+        <p>Clean and modern designs that offer seamless user experiences.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-chart-line"></i>
+        <h3>SEO Optimization</h3>
+        <p>Make your site easier to find with optimized performance and content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Project-->
+<section class="projects" id="projects">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Some of my recent work</p>
+
+    <div class="project-grid">
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Portfolio Website</h3>
+        <p>A modern and responsive personal portfolio website built with HTML, CSS, and JavaScript. Includes sections for services, projects, and certificates.</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>E-Commerce Landing Page</h3>
+        <p>Designed and developed a landing page for an online store with clean UI/UX, product highlights, and call-to-action elements using ReactJS.</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Blog CMS</h3>
+        <p>Developed a content management system for blogging, with user authentication, post editor, and responsive design using Node.js and MongoDB.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate -->
+<section class="certificate" id="certificate">
+  <div class="container">
+    <h2 data-aos="fade-right">Certificate</h2>
+    <div class="certificate-grid">
+      
+      <!-- Card 1 -->
+      <div class="certificate-card" data-aos="zoom-in">
+        <a href="images/certificate1.JPG" data-lightbox="certificates" data-title="LKP Akademikita - Training IT Support">
+          <img src="images/certificate1.JPG" alt="IT Support Certificate">
+        </a>
+        <h3>LKP Akademikita - Training IT Support</h3>
+        <p>Completed an IT Support training program focused on computer maintenance, troubleshooting, system installation, and basic networking skills.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="certificate-card" data-aos="zoom-in">
+        <a href="images/certificate2.JPG" data-lightbox="certificates" data-title="Information Technology (Business Software Category)">
+          <img src="images/certificate2.JPG" alt="OSN Business Software Certificate">
+        </a>
+        <h3>Information Technology (Business Software Category)</h3>
+        <p>Participated in the National Science Olympiad (OSN) in Information Technology, developing business software solutions and enhancing problem-solving abilities.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="certificate-card" data-aos="zoom-in">
+        <a href="images/certificate3.JPG" data-lightbox="certificates" data-title="Web Technologies">
+          <img src="images/certificate3.JPG" alt="Web Technologies Certificate">
+        </a>
+        <h3>Web Technologies</h3>
+        <p>Completed a course on Web Technologies covering HTML, CSS, and JavaScript to build responsive and dynamic websites.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section class="contact" id="contact">
+  <div class="container" data-aos="fade-left">
+    <h2>Contact</h2>
+
+    <!-- Info Kontak -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+6285942029259">+62 859-4202-9259</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:alfarizzz411@gmail.com">alfarizzz411@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Ikon Media Sosial -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/alffar1zzz/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@alffar1zzz?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.facebook.com/rizz.973144" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Rifqi Alfariz.</p>
+  </footer>
+
+  <!-- CDN Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+  <script>
+    window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
+};
+  </script>
+</body>
+</html>
